@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;300&display=swap" rel="stylesheet" />
+  <!--  Bootstrap  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+  <!-- font awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <title>Celestial Chronicles</title>
+</head>
+
+<body>
+  <!-- Navigation -->
+
+  <nav class="navbar fixed-top navbar-light transparent">
+    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <div id="comparison" class="container-fluid py-5">
+        <a href=""><i class="fa-solid fa-xmark"></i></a>
+        <h1>Celestial Comparison</h1>
+        <p>Pick two names to compare their celestial chronicles</p>
+        <div id="buttonName">
+          <button class="customBtn">Eva</button>
+          <button class="customBtn">Michael</button>
+          <button class="customBtn">Louise</button>
+          <button class="customBtn">Adam</button>
+          <button class="customBtn">Helen</button>
+          <button id="checkBtn" class="customBtn-check">CELESTIAL CHECK</button>
+          <a id="startAgain" href="">start again <i class="fa-solid fa-rotate-left"></i></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- End of navigation -->
+
+  <!-- Hero section -->
+  <section>
+    <div id="heroBackground" class="p-5 bg-body-tertiary">
+      <div id="hero" class="container-fluid py-5">
+        <h1>Celestial Chronicles</h1>
+        <p>
+          Welcome, cosmic explorer! Prepare to embark on a journey through the
+          stars and time. Celestial Chronicles beckons you to uncover the
+          secrets of your birthdate and witness the cosmic spectacle that
+          unfolded on that fateful day. Ready to dive into the cosmic archives
+          and discover the wonders that awaited you in the vastness of space?
+        </p>
+        <a href="#name-back" class="btn btn-lg"> LAUNCH INTO THE COSMOS </a>
+      </div>
+    </div>
+  </section>
+  <!-- End of hero section -->
+
+  <!-- ANNA's CODE -->
+  <section class="name-section container-fluid m-0 p-0">
+    <div id="name-back">
+      <div class="col-md-6 col-10 text-center align-content-center position-absolute top-50 start-50 translate-middle">
+        <p class="name-text mb-5 mb-md-0">
+          What shall we call you in this celestial odyssey?
+        </p>
+        <div class="input-group justify-content-center mb-5 mt-5">
+          <input id="name-input" type="text" class="form-control text-center mb-5 mt-5"
+            aria-label="Sizing example input" placeholder="Your Name" aria-describedby="inputGroup-sizing-default" />
+        </div>
+        <a href="#date-img" type="submit" class="btn-name btn-lg mt-5 mt-md-0 p-0"></a>
+      </div>
+    </div>
+  </section>
+  <!--  End of ANNA's CODE -->
+
+  <!--////////////////////////////////  DATE SECTION ////////////////////////////////-->
+  <section class="date-section">
+    <div id="date-img">
+      <img src="" alt="" />
+      <h2>Unlock the celestial secrets by sharing your birthdate.</h2>
+      <form action="" method="post">
+        <label for="day"></label>
+        <input type="text" id="day" name="day" maxlength="2" placeholder="DD" required />
+
+        <label for="month"></label>
+        <input type="text" id="month" name="month" maxlength="2" placeholder="MM" required />
+
+        <label for="year"></label>
+        <input type="text" id="year" name="year" maxlength="4" placeholder="YYYY" required />
+
+        <button type="button" onclick="submitForm()">
+          <a href="#card-section-title"> REVEAL MY CELESTIAL CHRONICLES</a>
+        </button>
+      </form>
+    </div>
+  </section>
+  <!--//////////////////////////////// END OF DATE SECTION ////////////////////////////////-->
+
+  <!--//////////////////////////////// CARD SECTION ////////////////////////////////-->
+
+  <section class="card-section container-fluid center-section">
+    <h2 id="card-section-title">Celestial Chronicles</h2>
+    <div class="card mb-1 mx-auto">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img id="cardPicture" src="./assets/pexels-alex-andrews-3805983.jpg" class="img-fluid" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 id="cardName" class="card-title">Eva</h5>
+            <p id="cardDate" class="card-title-secondary">24th May 1989</p>
+            <p id="cardText" class="card-text">This is a wider card with supporting text below as a natural lead-in to
+              additional
+              content.
+              This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--//////////////////////////////// END OF CARD SECTION ////////////////////////////////-->
+
+  <!-- Card comparison section -->
+  <section class="card-comparison-section container-fluid m-0 p-0">
+    <div id="card-comparison-back">
+      <div class="col-lg-6 col-10 text-center align-content-center position-absolute top-50 start-50 translate-middle">
+        <p class="card-comparison-header mb-5 mb-md-0">
+          Celestial Comparison
+        </p>
+        <div class="d-sm-flex justify-content-sm-around d-block mt-md-5 mt-2">
+          <div class="col-sm-5 col-10 card-comperison mx-auto m-0">
+            <img src="./assets/pexels-alex-andrews-3805983.jpg" id="comparison-picture"
+              class="card-img-top img-fluid rounded-top-5" alt="...">
+            <div class="card-comperison-body pt-2 rounded-bottom-5 d-flex flex-column">
+              <h3 id="comperison-name" class="card-comperison-name mt-2">Eva</h3>
+              <p id="birth-date" class="birthDate mt-2">24th May 1976</p>
+              <p id="comperison-content" class="card-comperison-text mb-sm-0 mx-2 mb-4">May 24th is the day in 1976 that
+                the Judgement of Paris takes place in
+                France, launching California as a worldwide force
+                in the production of quality wine. </p>
+            </div>
+          </div>
+          <div class="col-sm-5 col-10 card-comperison mx-auto p-0 m-0 mt-sm-0 mt-3">
+            <img src="./assets/pexels-alex-andrews-3805983.jpg" id="second-comparison-picture"
+              class="card-img-top img-fluid rounded-top-5" alt="...">
+            <div class="card-comperison-body pt-2 rounded-bottom-5 d-flex flex-column">
+              <h3 id="second-comperison-name" class="card-comperison-name mt-2">Helen</h3>
+              <p id="second-birth-date" class="birthDate mt-2">23rd July 1997</p>
+              <p id="second-comperison-content" class="card-comperison-text mb-sm-0 mx-2 mb-4">July 23rd is the day in
+                1997 that Digital Equipment Company files
+                antitrust charges against chipmaker Intel. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End of card comparison section -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

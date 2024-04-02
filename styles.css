@@ -1,0 +1,648 @@
+/* variables */
+
+:root {
+  /* Colors: */
+  --unnamed-color-a994bb: #a994bb;
+  --unnamed-color-94bbb3: #94bbb3;
+  --unnamed-color-daefeb: #daefeb;
+  --unnamed-color-521369: #521369;
+  --unnamed-color-0a332c: #0a332c;
+  --unnamed-color-13695b: #13695b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Barlow", sans-serif;
+  color: var(--unnamed-color-daefeb);
+  scroll-behavior: smooth;
+  /* overflow: hidden; */
+}
+
+/* nav */
+.navbar {
+  padding: 0;
+}
+
+.navbar-toggler {
+  background-color: var(--unnamed-color-521369);
+  border-start-end-radius: 100% !important;
+  writing-mode: vertical-rl;
+  font-size: 30px;
+  border-radius: 0;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(169, 148, 187, 1), 37, 41, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-toggler-icon:hover {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(148, 187, 179, 1), 37, 41, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+span {
+  margin-bottom: 20px;
+  margin-right: 10px;
+}
+
+@media (min-width: 992px) {
+  .navbar-toggler {
+    display: block;
+  }
+}
+
+#navbarNav {
+  text-align: center;
+  background-image: linear-gradient(rgba(46, 12, 77, 0.6), rgb(82, 19, 105)),
+    url(./assets/pexels-nicole-avagliano-2312040.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.fa-xmark {
+  font-size: 40px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-left: 15px;
+}
+
+#comparison h1 {
+  font-size: 60px;
+  margin-top: 70px;
+  color: #e0e0e0;
+}
+
+#comparison p {
+  font-size: 20px;
+  color: #e0e0e0;
+  padding: 30px;
+}
+
+#buttonName {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.customBtn {
+  background-color: #03806b;
+  mix-blend-mode: screen;
+  color: #94bbb3;
+  border: none;
+  padding: 3px 35px;
+  border-radius: 7px;
+}
+
+.on {
+  background-color: var(--unnamed-color-521369);
+}
+
+.customBtn:hover {
+  background-color: var(--unnamed-color-521369);
+}
+
+.customBtn-check {
+  margin-top: 45px;
+  border: none;
+  padding: 10px 35px;
+  border-radius: 7px;
+  mix-blend-mode: screen;
+  background-color: var(--unnamed-color-521369);
+}
+
+.customBtn-check:hover {
+  background-color: #03806b;
+}
+
+#buttonName a,
+i {
+  color: var(--unnamed-color-94bbb3);
+  text-decoration: none;
+  padding: 2px;
+  margin-top: 15px;
+}
+
+#buttonName a:hover {
+  color: #e0e0e0;
+}
+
+#buttonName a:hover i {
+  color: #e0e0e0;
+}
+
+i {
+  font-size: small;
+}
+
+@media screen and (max-width: 768px) {
+  #comparison h1 {
+    font-size: 35px;
+    margin-top: 20px;
+  }
+
+  #comparison p {
+    font-size: 16px;
+  }
+
+  #navbarNav {
+    background-position: center;
+    height: 115vh;
+  }
+}
+
+/* end of nav */
+
+/* Hero */
+
+#heroBackground {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.9)),
+    url(./assets/pexels-alex-andrews-3805983.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-attachment: fixed;
+}
+
+#hero {
+  min-width: 500px;
+  max-width: 700px;
+  text-align: center;
+}
+
+#hero h1 {
+  font-size: 64px;
+  font-weight: 600;
+}
+
+#hero p {
+  margin-top: 35px;
+  opacity: 0.7;
+  font-weight: lighter;
+}
+
+#hero a {
+  margin-top: 30px;
+  background-color: var(--unnamed-color-13695b);
+  color: var(--unnamed-color-daefeb);
+  mix-blend-mode: screen;
+  border: none;
+}
+
+#hero a:hover {
+  background-color: var(--unnamed-color-521369);
+  color: var(--unnamed-color-daefeb);
+}
+
+@media screen and (max-width: 600px) {
+  #hero {
+    min-width: 400px;
+  }
+
+  #hero h1 {
+    font-size: 35px;
+  }
+
+  #hero p {
+    padding: 35px;
+  }
+
+  .navbar-toggler {
+    background-color: transparent;
+    font-size: 26px;
+  }
+}
+
+/*  End of Hero */
+
+/* Name section */
+.name-section {
+  width: 100%;
+  position: relative;
+}
+
+#name-back {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.9)),
+    url(./assets/pexels-alex-andrews-3805983.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.name-text {
+  font-size: 34px;
+  font-weight: 300;
+  color: var(--unnamed-color-daefeb);
+}
+
+.form-control {
+  font-family: "Barlow", sans-serif;
+  max-width: 50%;
+  height: 50px;
+  border-radius: 10px;
+  background: var(--unnamed-color-13695b);
+  filter: brightness(150%) saturate(150%);
+  opacity: 0.5;
+  font-size: 28px;
+  font-weight: 600;
+  word-spacing: 5px;
+  border: none;
+  color: white;
+}
+
+#name-input::placeholder {
+  color: var(--unnamed-color-daefeb);
+  opacity: 0.6;
+}
+
+.btn-name {
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 30px solid var(--unnamed-color-13695b);
+  filter: brightness(150%) saturate(150%);
+  opacity: 0.5;
+  border-radius: 7px;
+}
+
+.form-control:hover,
+.form-control:focus {
+  background: var(--unnamed-color-13695b);
+  opacity: 0.7;
+  box-shadow: none;
+  color: white;
+}
+
+.btn-name:focus,
+.btn-name:hover,
+.btn:active {
+  box-shadow: none;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 30px solid var(--unnamed-color-521369);
+  opacity: 0.7;
+  outline: none;
+  outline-color: transparent;
+}
+
+@media screen and (max-width: 998px) {
+  .name-text {
+    font-size: 22px;
+  }
+
+  .form-control {
+    max-width: 75%;
+    height: 40px;
+    font-size: 18px;
+    margin-bottom: 50px;
+  }
+}
+
+/* End name section */
+
+/*//////////////////////////////////// DATE SECTION ////////////////////////////////////*/
+
+.date-section {
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.9)),
+    url(./assets/pexels-alex-andrews-3805983.jpg);
+  background-repeat: no-repeat;
+}
+
+.date-section h2 {
+  text-align: center;
+  color: #e0e0e0;
+  font-size: 34px;
+  opacity: 0.9;
+  margin-top: 183px;
+}
+
+.date-section form {
+  margin-top: 100px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  height: 69px;
+}
+
+.date-section input[placeholder="DD"],
+[placeholder="MM"] {
+  font-size: 40px;
+  text-align: center;
+  width: 100px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border: none;
+  outline: none;
+}
+
+.date-section input[placeholder="YYYY"] {
+  font-size: 40px;
+  text-align: center;
+  width: 140px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border: none;
+  outline: none;
+}
+
+.date-section input[type="text"] {
+  color: var(--unnamed-color-daefeb);
+  background: #13695b 0% 0% no-repeat padding-box;
+  mix-blend-mode: screen;
+  border-radius: 15px;
+  border-color: var(--unnamed-color-13695b);
+  margin: 0 10px;
+}
+
+.date-section button {
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 169px;
+  width: 369px;
+  height: 69px;
+  font-size: 20px;
+  color: var(--unnamed-color-daefeb);
+  background: #521369 0% 0% no-repeat padding-box;
+  mix-blend-mode: screen;
+  border-radius: 15px;
+  border-color: var(--unnamed-color-521369);
+  border: none;
+}
+
+.date-section button a {
+  text-decoration: none;
+  color: var(--unnamed-color-daefeb);
+}
+
+.date-section button:hover {
+  background-color: var(--unnamed-color-13695b);
+  border-color: var(--unnamed-color-13695b);
+}
+
+@media screen and (max-width: 768px) {
+  .date-section {
+    height: 150vh;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .date-section {
+    height: 100vh;
+  }
+
+  .date-section h2 {
+    text-align: center;
+    color: #e0e0e0;
+    font-size: 22px;
+    margin-top: 110px;
+  }
+
+  .date-section form {
+    margin-top: 50px;
+  }
+
+  .date-section input[placeholder="DD"],
+  [placeholder="MM"] {
+    font-size: 20px;
+    width: 69px;
+  }
+
+  .date-section input[placeholder="YYYY"] {
+    font-size: 20px;
+    width: 90px;
+  }
+
+  .date-section input[type="text"] {
+    border-radius: 17px;
+    margin: 5px 5px;
+  }
+
+  .date-section button {
+    margin-top: 149px;
+    width: 275px;
+    height: 60px;
+    font-size: 16px;
+    border-radius: 17px;
+  }
+}
+
+/*//////////////////////////////////// END OF DATE SECTION ////////////////////////////////////*/
+
+/*//////////////////////////////////// CARD SECTION ////////////////////////////////////*/
+
+.card-section {
+  padding: 20px;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.9)),
+    url(./assets/pexels-alex-andrews-3805983.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+#card-section-title {
+  margin-top: 280px;
+  margin-bottom: -1%;
+  height: 20vh;
+  text-align: center;
+  font-size: 56px;
+}
+
+.card {
+  width: 750px;
+  height: 300px;
+  background: var(--unnamed-color-521369) 0% 0% no-repeat padding-box;
+  mix-blend-mode: screen;
+  border-radius: 34px;
+}
+
+#cardPicture {
+  height: 300px;
+  object-fit: cover;
+  border-radius: 34px 0px 0px 34px;
+}
+
+.card-title {
+  margin-top: 15px;
+}
+
+.card-text {
+  font-size: 18px;
+}
+
+.cardNav button a:hover {
+  color: var(--unnamed-color-a994bb);
+}
+
+#secondNav {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .card-section {
+    height: 100vh;
+  }
+
+  .card {
+    width: 520px;
+    height: 299px;
+  }
+
+  #card-section-title {
+    margin-top: 70px;
+    font-size: 35px;
+    margin-bottom: -50px;
+  }
+
+  #cardPicture {
+    border-radius: 34px 0px 0px 34px;
+    width: 100%;
+  }
+
+  .card-body h5 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .cardNav {
+    display: flex;
+    height: 24vh;
+  }
+
+  #card-section-title {
+    margin-top: 110px;
+    font-size: 26px;
+  }
+
+  .card {
+    max-width: 69%;
+    height: 75vh;
+    margin-top: -50px;
+  }
+
+  .card-section {
+    height: 120vh;
+  }
+
+  #cardPicture {
+    height: 220px;
+    width: 100%;
+    border-radius: 34px 34px 0 0px;
+  }
+
+  .card-text {
+    font-size: 15px;
+  }
+}
+
+/*//////////////////////////////////// END OF CARD SECTION ////////////////////////////////////*/
+
+/* Card comparison section */
+.card-comparison-section {
+  width: 100%;
+  position: relative;
+}
+
+#card-comparison-back {
+  height: 150vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.9)),
+    url(./assets/pexels-alex-andrews-3805983.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.card-comparison-header {
+  margin-top: 50px;
+  font-size: 56px;
+  color: var(--unnamed-color-daefeb);
+}
+
+.card-comperison {
+  filter: brightness(140%) saturate(200%);
+}
+
+#comparison-picture,
+#second-comparison-picture {
+  width: 350px;
+  height: 200px;
+}
+
+.card-comperison-body {
+  background: rgba(99, 23, 127, 0.4);
+  color: white;
+  height: 70%;
+}
+
+.card-img-top {
+  opacity: 0.4;
+}
+
+.card-comperison-name {
+  font-weight: 500;
+}
+
+.birthDate {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+}
+
+.card-comperison-text {
+  font-size: 16px;
+  font-weight: 100;
+  overflow: auto;
+}
+
+@media screen and (max-width: 1000px) {
+
+  .card-comparison-header {
+    font-size: 40px;
+    margin-top: 20px;
+  }
+
+  .birthDate {
+    font-size: 16px;
+  }
+
+  .card-comperison-text {
+    font-size: 3vh;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #card-comparison-back {
+    height: 210vh;
+  }
+
+  .card-comparison-header {
+    font-size: 30px;
+    margin-top: 30px;
+  }
+
+  #comparison-picture,
+  #second-comparison-picture {
+    width: 400px;
+    height: 180px;
+  }
+}
+
+/* End card comparison section */
